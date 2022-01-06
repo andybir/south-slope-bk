@@ -34,13 +34,15 @@ function Document({ children, title }) {
       <head>
         <meta charSet='utf-8' />
         <meta name='viewport' content='width=device-width,initial-scale=1' />
+        <script
+          src='https://kit.fontawesome.com/25f620e40e.js'
+          crossorigin='anonymous'
+        ></script>
         <Meta />
         <Links />
       </head>
       <body>
-        <Outlet />
-        <ScrollRestoration />
-        <Scripts />
+        {children}
         {process.env.NODE_ENV === 'development' && <LiveReload />}
       </body>
     </html>
@@ -55,11 +57,11 @@ function Layout({ children }) {
           South Slope
         </Link>
 
-        <ul className='nav'>
+        {/* <ul className='nav'>
           <li>
             <Link to=''>Menu Item 1</Link>
           </li>
-        </ul>
+        </ul> */}
       </nav>
       <div className='container'>{children}</div>
     </>
