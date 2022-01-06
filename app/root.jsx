@@ -1,4 +1,5 @@
 import {
+  Link,
   Links,
   LiveReload,
   Meta,
@@ -8,7 +9,7 @@ import {
 } from "remix";
 
 export function meta() {
-  return { title: "New Remix App" };
+  return { title: "South Slope BK" };
 }
 
 export default function App() {
