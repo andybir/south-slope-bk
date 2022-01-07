@@ -3,7 +3,7 @@ export default function Index() {
     <div className='container'>
       <div className='content'>
         <a target='_blank' href='https://www.instagram.com/southslopebk/'>
-          <i class='fab fa-instagram fa-5x'></i>
+          <i class='fab fa-instagram fa-4x'></i>
         </a>
       </div>
     </div>
